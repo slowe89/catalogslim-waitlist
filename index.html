@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CatalogSlim — help your agents choose the right tool</title>
+    <meta
+      name="description"
+      content="Find tools with overlapping names and descriptions. Get clearer names, rewritten descriptions and a shortlist of 3–5 tools to keep loaded."
+    />
+    <meta name="theme-color" content="#0b1020" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      property="og:title"
+      content="CatalogSlim — help your agents choose the right tool"
+    />
+    <meta
+      property="og:description"
+      content="Find tools with overlapping names and descriptions. Get clearer names, rewritten descriptions and a shortlist of 3–5 tools to keep loaded."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="wordmark" href="#top">Catalog<span>Slim</span></a>
+        <p class="demand-badge">Early access</p>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="wrap hero-grid">
+          <div>
+            <p class="eyebrow">Tool catalog audits for agent operators</p>
+            <h1>Help your agents choose the right tool.</h1>
+            <p class="subhead">
+              Find tools with overlapping names and descriptions. Get clearer
+              names, rewritten descriptions and a shortlist of 3–5 tools to keep
+              loaded, with the rest loaded when needed. Works alongside your
+              existing tool search.
+            </p>
+            <div class="cta-row">
+              <a class="btn primary" href="#scorecard" data-source="catalogslim-scorecard"
+                >Check your catalog setup — free</a
+              >
+              <a class="btn secondary" href="#waitlist" data-source="catalogslim-waitlist"
+                >Join the waitlist</a
+              >
+            </div>
+          </div>
+          <aside class="diet-panel" aria-label="Overlapping tools versus a focused shortlist">
+            <p class="diet-panel-label">overlapping names → focused shortlist</p>
+            <div class="diet-cols">
+              <div>
+                <p class="col-kicker">before</p>
+                <ul>
+                  <li><span class="tool">crm.update</span><span class="tag clash">overlap</span></li>
+                  <li><span class="tool">crm.patch</span><span class="tag clash">overlap</span></li>
+                  <li><span class="tool">crm.upsert</span><span class="tag clash">overlap</span></li>
+                  <li><span class="tool">plus 40+ more</span><span class="tag mute">always on</span></li>
+                </ul>
+              </div>
+              <div>
+                <p class="col-kicker">after</p>
+                <ul>
+                  <li><span class="tool">crm.write</span><span class="tag ok">shortlist</span></li>
+                  <li><span class="tool">4 others</span><span class="tag ok">shortlist</span></li>
+                  <li><span class="tool">rest of catalog</span><span class="tag mute">on demand</span></li>
+                  <li><span class="tool">rename pack</span><span class="tag ok">ready to load</span></li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="bullets" id="why">
+        <div class="wrap">
+          <h2>What’s in the pack</h2>
+          <ol class="bullet-grid">
+            <li>
+              <h3>Find overlapping tools</h3>
+              <p>
+                Map groups of tools with similar names or descriptions so you
+                can see where an agent may choose the wrong one.
+              </p>
+            </li>
+            <li>
+              <h3>Clarify names and descriptions</h3>
+              <p>
+                Get consistent names and descriptions that explain when to use
+                each tool instead of a similar one.
+              </p>
+            </li>
+            <li>
+              <h3>Keep a focused shortlist</h3>
+              <p>
+                Get a written recommendation for 3–5 tools to keep loaded and
+                which tools to load only when needed.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="audience" id="fit">
+        <div class="wrap split">
+          <div>
+            <h2>Who it’s for</h2>
+            <p>
+              Agent operators and platform teams with roughly 30+ tools or 3+
+              MCP servers, especially when agents choose similar tools
+              incorrectly. Fits teams already using tool search or loading tools
+              on demand.
+            </p>
+          </div>
+          <div>
+            <h2>Who it’s not for</h2>
+            <p>
+              Teams with a small, clearly distinct tool set, or teams looking
+              for a replacement tool router.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="ranges">
+        <div class="wrap">
+          <h2>Early pricing</h2>
+          <p class="pricing-note">
+            We’re testing demand for this offer. These are estimated ranges;
+            scope and timing would be agreed before any work starts. No payment
+            is taken here.
+          </p>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Offer</th>
+                  <th scope="col">Estimated price</th>
+                  <th scope="col">What’s included</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Audit + diet pack</th>
+                  <td data-label="Estimated price"><span class="price">$3,997–$9,997</span></td>
+                  <td data-label="What’s included">
+                    Cluster map, rename / description pack, harness-ready shortlist
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Catalog retain</th>
+                  <td data-label="Estimated price"><span class="price">$997–$1,997/mo</span></td>
+                  <td data-label="What’s included">
+                    Keep the catalog from re-clustering as tools land
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Golden regression add-on</th>
+                  <td data-label="Estimated price"><span class="price">+$1,497</span></td>
+                  <td data-label="What’s included">
+                    Labeled request set + recall vs precision check on the diet
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="scorecard" id="scorecard">
+        <div class="wrap">
+          <div class="scorecard-head">
+            <div>
+              <p class="eyebrow">10 questions · Yes = 10 · No = 0</p>
+              <h2>Catalog Readiness Score</h2>
+              <p class="lede">
+                Answer 10 yes/no questions about how you manage and test your
+                tool catalog. Each Yes adds 10 points. Higher means more checks
+                covered. No email needed to see your score.
+              </p>
+              <p class="score-disclaimer">
+                This is a self-assessment, not a measured routing benchmark.
+              </p>
+            </div>
+            <aside class="score-readout" aria-live="polite">
+              <p class="score-number" id="score-total">—</p>
+              <p class="score-band" id="score-band">Answer to score</p>
+              <p class="score-progress" id="score-progress">0 / 10 answered</p>
+            </aside>
+          </div>
+
+          <noscript>
+            <p class="nojs-note">
+              Scoring needs JavaScript. You can still answer every question and
+              include them when you
+              <a href="#waitlist">join the waitlist</a> with the form below.
+            </p>
+          </noscript>
+
+          <ol class="score-items" id="score-items">
+            <li data-key="q1">
+              <fieldset>
+                <legend>Do you keep an up-to-date inventory of your tools and MCP servers?</legend>
+                <div class="yn">
+                  <label><input type="radio" name="maturity-q1" value="Y" /> <span>Yes</span></label>
+                  <label><input type="radio" name="maturity-q1" value="N" /> <span>No</span></label>
+                </div>
+              </fieldset>
+            </li>
+            <li data-key="q2">
+              <fieldset>
+                <legend>Do you keep examples of wrong-tool calls as regression tests?</legend>
+                <div class="yn">
+                  <label><input type="radio" name="maturity-q2" value="Y" /> <span>Yes</span></label>
+                  <label><input type="radio" name="maturity-q2" value="N" /> <span>No</span></label>
+                </div>
+              </fieldset>
+            </li>
+            <li data-key="q3">
+              <fieldset>
+                <legend>Do you use namespaced tool names?</legend>
+                <div class="yn">
+                  <label><input type="radio" name="maturity-q3" value="Y" /> <span>Yes</span></label>
+                  <label><input type="radio" name="maturity-q3" value="N" /> <span>No</span></label>
+                </div>
+              </fieldset>
+            </li>
+            <li data-key="q4">
+              <fieldset>
+                <legend>Do descriptions explain when to use a tool versus a similar one?</legend>
+                <div class="yn">
+                  <label><input type="radio" name="maturity-q4" value="Y" /> <span>Yes</span></label>
+                  <label><input type="radio" name="maturity-q4" value="N" /> <span>No</span></label>
+                </div>
+              </fieldset>
+            </li>
+            <li data-key="q5">
+              <fieldset>
+                <legend>Do you load tools on demand instead of keeping 50+ always on?</legend>
+                <div class="yn">
+                  <label><input type="radio" name="maturity-q5" value="Y" /> <span>Yes</span></label>
+                  <label><input type="radio" name="maturity-q5" value="N" /> <span>No</span></label>
+                </div>
+              </fieldset>
+            </li>
+            <li data-key="q6">
+              <fieldset>
+                <legend>Do you keep a written shortlist of always-on tools versus deferred ones?</legend>
+                <div class="yn">
+                  <label><input type="radio" name="maturity-q6" value="Y" /> <span>Yes</span></label>
+                  <label><input type="radio" name="maturity-q6" value="N" /> <span>No</span></label>
+                </div>
+              </fieldset>
+            </li>
+            <li data-key="q7">
+              <fieldset>
+                <legend>Do you keep a labeled request set of at least 50 examples?</legend>
+                <div class="yn">
+                  <label><input type="radio" name="maturity-q7" value="Y" /> <span>Yes</span></label>
+                  <label><input type="radio" name="maturity-q7" value="N" /> <span>No</span></label>
+                </div>
+              </fieldset>
+            </li>
+            <li data-key="q8">
+              <fieldset>
+                <legend>Do you track retrieval recall and selection precision separately?</legend>
+                <div class="yn">
+                  <label><input type="radio" name="maturity-q8" value="Y" /> <span>Yes</span></label>
+                  <label><input type="radio" name="maturity-q8" value="N" /> <span>No</span></label>
+                </div>
+              </fieldset>
+            </li>
+            <li data-key="q9">
+              <fieldset>
+                <legend>Do you use a checklist so new tools don’t create overlapping clusters?</legend>
+                <div class="yn">
+                  <label><input type="radio" name="maturity-q9" value="Y" /> <span>Yes</span></label>
+                  <label><input type="radio" name="maturity-q9" value="N" /> <span>No</span></label>
+                </div>
+              </fieldset>
+            </li>
+            <li data-key="q10">
+              <fieldset>
+                <legend>Do you have a named owner and a re-score cadence?</legend>
+                <div class="yn">
+                  <label><input type="radio" name="maturity-q10" value="Y" /> <span>Yes</span></label>
+                  <label><input type="radio" name="maturity-q10" value="N" /> <span>No</span></label>
+                </div>
+              </fieldset>
+            </li>
+          </ol>
+
+          <p class="band-key">
+            Bands: 0–39 Baseline not established · 40–69 Some checks covered ·
+            70–89 Most checks covered · 90–100 Checklist largely covered
+          </p>
+
+          <div class="score-invite" id="score-invite" hidden>
+            <p id="score-invite-text"></p>
+            <a class="btn primary" href="#waitlist" data-source="catalogslim-scorecard"
+              >Share your score on the waitlist</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="waitlist" id="waitlist">
+        <div class="wrap form-col">
+          <p class="eyebrow">Join the waitlist</p>
+          <h2>Tell us about your tool catalog</h2>
+          <p class="lede">
+            Email, five questions and a budget band are required. The score
+            above is optional. This is a waitlist for an Audit + diet pack that
+            works alongside your existing tool search.
+          </p>
+
+          <div class="success" id="form-success" hidden role="status" tabindex="-1">
+            <p>
+              Thanks — Spencer will reply from thespencerlowe@gmail.com if an
+              Audit + diet pack looks like a fit.
+            </p>
+          </div>
+
+          <form
+            id="priestley-form"
+            class="priestley"
+            action="https://formsubmit.co/thespencerlowe@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="CatalogSlim waitlist" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" />
+            <input type="hidden" name="source" id="meta-source" value="catalogslim-waitlist" />
+            <input type="hidden" name="score_total" id="meta-score-total" value="" />
+            <input type="hidden" name="score_vector" id="meta-score-vector" value="" />
+            <input type="hidden" name="timestamp" id="meta-timestamp" value="" />
+            <input
+              type="hidden"
+              name="scorecard_version"
+              id="meta-score-version"
+              value="catalogslim-polish-2026-09-09"
+            />
+
+            <div class="field">
+              <label for="email">Work email <span class="req">Required</span></label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                placeholder="you@company.com"
+              />
+            </div>
+
+            <div class="field">
+              <label for="q1"
+                >1. How many tools or MCP servers do you use, and where does the
+                agent choose the wrong tool?
+                <span class="req">Required</span></label
+              >
+              <p class="helper" id="q1-help">Approximate counts and one example are enough.</p>
+              <textarea
+                id="q1"
+                name="q1_situation"
+                rows="4"
+                required
+                aria-describedby="q1-help"
+              ></textarea>
+            </div>
+
+            <div class="field">
+              <label for="q2"
+                >2. What result would you want from a catalog cleanup?
+                <span class="req">Required</span></label
+              >
+              <p class="helper" id="q2-help">
+                For example, fewer wrong-tool calls on a set of requests you
+                already test.
+              </p>
+              <textarea
+                id="q2"
+                name="q2_result"
+                rows="4"
+                required
+                aria-describedby="q2-help"
+              ></textarea>
+            </div>
+
+            <div class="field">
+              <label for="q3"
+                >3. What have you tried, and what still fails?
+                <span class="req">Required</span></label
+              >
+              <textarea id="q3" name="q3_tried" rows="4" required></textarea>
+            </div>
+
+            <div class="field">
+              <label for="q4"
+                >4. What could you spend on a catalog cleanup, and what result
+                would justify it?
+                <span class="req">Required</span></label
+              >
+              <p class="helper" id="q4-help">
+                A rough estimate is fine. Choose the closest budget band below
+                as well.
+              </p>
+              <textarea
+                id="q4"
+                name="q4_budget"
+                rows="4"
+                required
+                aria-describedby="q4-help"
+              ></textarea>
+            </div>
+
+            <div class="field">
+              <label for="q5"
+                >5. Any deadlines, tooling limits or other constraints?
+                <span class="req">Required</span></label
+              >
+              <p class="helper" id="q5-help">“Nothing else” is fine.</p>
+              <textarea
+                id="q5"
+                name="q5_else"
+                rows="4"
+                required
+                aria-describedby="q5-help"
+              ></textarea>
+            </div>
+
+            <fieldset class="field radios">
+              <legend>Budget band <span class="req">Required</span></legend>
+              <label class="radio"
+                ><input type="radio" name="budget_band" value="Under $500" required />
+                Under $500</label
+              >
+              <label class="radio"
+                ><input type="radio" name="budget_band" value="$500–$1,999" />
+                $500–$1,999</label
+              >
+              <label class="radio"
+                ><input type="radio" name="budget_band" value="$2,000–$3,999" />
+                $2,000–$3,999</label
+              >
+              <label class="radio"
+                ><input type="radio" name="budget_band" value="$4,000–$9,999" />
+                $4,000–$9,999</label
+              >
+              <label class="radio"
+                ><input type="radio" name="budget_band" value="$10,000+" />
+                $10,000+</label
+              >
+              <label class="radio"
+                ><input type="radio" name="budget_band" value="Not sure yet" />
+                Not sure yet</label
+              >
+            </fieldset>
+
+            <p class="form-error" id="form-error" hidden role="alert" tabindex="-1"></p>
+            <button class="btn primary submit" type="submit" id="submit-btn">
+              Join the waitlist
+            </button>
+            <p class="form-hint">
+              We’re testing interest before committing to this offer. Spencer
+              may reply from thespencerlowe@gmail.com about your answers.
+              Joining doesn’t commit you to buy.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>We’re testing interest before committing to these packs. No payment is taken here.</p>
+        <p class="privacy">Your answers are used only to reply about CatalogSlim.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
