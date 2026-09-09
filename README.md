@@ -60,4 +60,6 @@ Browser-verified shots of the polished page:
 - [docs/polish-qa/hero-mobile.png](docs/polish-qa/hero-mobile.png) — hero (mobile)
 - [docs/polish-qa/scorecard-completed.png](docs/polish-qa/scorecard-completed.png) — completed Catalog Readiness Score
 - [docs/polish-qa/form.png](docs/polish-qa/form.png) — waitlist form
+- [docs/polish-qa/form-budget.png](docs/polish-qa/form-budget.png) — budget bands
 - [docs/polish-qa/success-state.png](docs/polish-qa/success-state.png) — intercepted success state
+- [docs/polish-qa/pricing-mobile.png](docs/polish-qa/pricing-mobile.png) — stacked early pricing on a phone
