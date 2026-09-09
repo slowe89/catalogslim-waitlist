@@ -1,12 +1,12 @@
 # CatalogSlim
 
-Priestley demand-test interest page for **CatalogSlim** — a catalog confusion diet for agent tool routing. Outside SOLVD. Static Vite site: landing copy, client-side Catalog Confusion Scorecard, and a waitlist form. No product backend, checkout, or cart.
+Demand-test waitlist for **CatalogSlim** — catalog audits that help agents choose the right tool. Outside SOLVD. Static Vite site: landing copy, client-side Catalog Readiness Score, and a waitlist form. No product backend, checkout, or cart.
 
 Capture: **thespencerlowe@gmail.com**
 
-Meta title: `CatalogSlim — catalog confusion diet for agent tool routing`
+Meta title: `CatalogSlim — help your agents choose the right tool`
 
-This is a demand test. Packaging is unproven. CatalogSlim is positioned as a **complement** to Anthropic Tool Search / `defer_loading` / RAG-MCP — search finds; diet disambiguates. Not a competing router SaaS.
+This is a demand test. CatalogSlim works alongside existing tool search: find overlapping names, clarify descriptions, and keep a shortlist of 3–5 tools loaded.
 
 ## Run locally
 
@@ -42,21 +42,22 @@ VITE_FORM_ENDPOINT=https://formspree.io/f/xxxxxxxx
 
 Then rebuild. Leave it unset to keep FormSubmit → thespencerlowe@gmail.com.
 
-Hidden fields on submit: `_subject` (`CatalogSlim waitlist`), `_honey`, `source` (`catalogslim-scorecard` or `catalogslim-waitlist`), `score_total`, `score_vector` (Y/N), and `timestamp`.
+Hidden fields on submit: `_subject` (`CatalogSlim waitlist`), `_honey`, `source` (`catalogslim-scorecard` or `catalogslim-waitlist`), `score_total`, `score_vector` (Y/N), `timestamp`, and `scorecard_version` (`catalogslim-polish-2026-09-09`).
 
 ## What’s on the page
 
-- Exact demand-test copy (headline, subhead, bullets, soft ranges, who / who not)
-- 10-item Catalog Confusion Scorecard (Yes = 10, No = 0, bands 0–100: Flat dump / Partial diet / Fragile routing / Dieted + measured)
-- Priestley form (required email + Q1–Q5 + budget bands Under $500 / $500–$1,999 / $2,000–$3,999 / $4,000–$9,999 / $10,000+ / Not sure yet)
+- Landing copy (headline, pack, who for / who not, early pricing)
+- 10-item Catalog Readiness Score (Yes = 10, No = 0; bands 0–100: Baseline not established / Some checks covered / Most checks covered / Checklist largely covered)
+- Waitlist form (required email + Q1–Q5 + budget bands Under $500 / $500–$1,999 / $2,000–$3,999 / $4,000–$9,999 / $10,000+ / Not sure yet)
 
-This is a waitlist / score follow-up page only. No invented metrics, F1 lifts, or waitlist counts.
+This is a waitlist / score follow-up page only. No invented metrics or waitlist counts.
 
 ## Preview
 
-Browser-verified shots of the shipped page:
+Browser-verified shots of the polished page:
 
-- [docs/hero.png](docs/hero.png) — hero (desktop)
-- [docs/scorecard.png](docs/scorecard.png) — Catalog Confusion Scorecard
-- [docs/form.png](docs/form.png) — Priestley form
-- [docs/hero-mobile.png](docs/hero-mobile.png) — mobile hero
+- [docs/polish-qa/hero-desktop.png](docs/polish-qa/hero-desktop.png) — hero (desktop)
+- [docs/polish-qa/hero-mobile.png](docs/polish-qa/hero-mobile.png) — hero (mobile)
+- [docs/polish-qa/scorecard-completed.png](docs/polish-qa/scorecard-completed.png) — completed Catalog Readiness Score
+- [docs/polish-qa/form.png](docs/polish-qa/form.png) — waitlist form
+- [docs/polish-qa/success-state.png](docs/polish-qa/success-state.png) — intercepted success state
