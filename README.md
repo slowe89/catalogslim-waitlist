@@ -54,7 +54,13 @@ This is a waitlist / score follow-up page only. No invented metrics or waitlist 
 
 ## Preview
 
-Browser-verified shots of the polished page:
+Wrong-sibling / CI shortlist copy (this branch):
+
+- [docs/sibling-copy/hero_desktop.png](docs/sibling-copy/hero_desktop.png) — hero + pack (desktop 1280×800)
+- [docs/sibling-copy/hero_mobile_375.png](docs/sibling-copy/hero_mobile_375.png) — hero (~375px)
+- [docs/sibling-copy/pack_mobile_375.png](docs/sibling-copy/pack_mobile_375.png) — pack (~375px)
+
+Earlier polish QA shots of the polished page:
 
 - [docs/polish-qa/hero-desktop.png](docs/polish-qa/hero-desktop.png) — hero (desktop)
 - [docs/polish-qa/hero-mobile.png](docs/polish-qa/hero-mobile.png) — hero (mobile)
