@@ -81,7 +81,7 @@ check(
 );
 
 const h1 = await page.locator("h1").innerText();
-check("H1 is new promise", h1.includes("Help your agents choose the right tool"));
+check("H1 is new promise", h1.includes("Stop agents picking the wrong sibling tool"));
 
 const version = await page.locator("#meta-score-version").inputValue();
 check("scorecard version marker", version === "catalogslim-polish-2026-09-09");

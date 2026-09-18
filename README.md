@@ -1,12 +1,12 @@
 # CatalogSlim
 
-Demand-test waitlist for **CatalogSlim** — catalog audits that help agents choose the right tool. Outside SOLVD. Static Vite site: landing copy, client-side Catalog Readiness Score, and a waitlist form. No product backend, checkout, or cart.
+Demand-test waitlist for **CatalogSlim** — a CI confusion-pair gate and always-on shortlist diet so selection stops picking the wrong sibling tool. Outside SOLVD. Static Vite site: landing copy, client-side Catalog Readiness Score, and a waitlist form. No product backend, checkout, or cart.
 
 Capture: **thespencerlowe@gmail.com**
 
-Meta title: `CatalogSlim — help your agents choose the right tool`
+Meta title: `CatalogSlim — stop agents picking the wrong sibling tool`
 
-This is a demand test. CatalogSlim works alongside existing tool search: find overlapping names, clarify descriptions, and keep a shortlist of 3–5 tools loaded.
+This is a demand test. CatalogSlim works alongside existing tool search: when recall finds the right cluster but selection still picks `crm.patch` over `crm.write`, ship a confusion-pair assertion and a short always-on shortlist — not a longer catalog.
 
 ## Run locally
 
@@ -46,7 +46,7 @@ Hidden fields on submit: `_subject` (`CatalogSlim waitlist`), `_honey`, `source`
 
 ## What’s on the page
 
-- Landing copy (headline, pack, who for / who not, early pricing)
+- Landing copy (wrong-sibling H1, CI shortlist pack, who for / who not, early pricing)
 - 10-item Catalog Readiness Score (Yes = 10, No = 0; bands 0–100: Baseline not established / Some checks covered / Most checks covered / Checklist largely covered)
 - Waitlist form (required email + Q1–Q5 + budget bands Under $500 / $500–$1,999 / $2,000–$3,999 / $4,000–$9,999 / $10,000+ / Not sure yet)
 
