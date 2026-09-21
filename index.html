@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CatalogSlim — help your agents choose the right tool</title>
+    <title>CatalogSlim — stop agents picking the wrong sibling tool</title>
     <meta
       name="description"
-      content="Find tools with overlapping names and descriptions. Get clearer names, rewritten descriptions and a shortlist of 3–5 tools to keep loaded."
+      content="When recall finds the right cluster but selection still picks crm.patch over crm.write, ship a CI confusion-pair gate and a short always-on shortlist."
     />
     <meta name="theme-color" content="#0b1020" />
     <meta name="robots" content="index,follow" />
     <meta
       property="og:title"
-      content="CatalogSlim — help your agents choose the right tool"
+      content="CatalogSlim — stop agents picking the wrong sibling tool"
     />
     <meta
       property="og:description"
-      content="Find tools with overlapping names and descriptions. Get clearer names, rewritten descriptions and a shortlist of 3–5 tools to keep loaded."
+      content="When recall finds the right cluster but selection still picks crm.patch over crm.write, ship a CI confusion-pair gate and a short always-on shortlist."
     />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -41,13 +41,12 @@
       <section class="hero" id="top">
         <div class="wrap hero-grid">
           <div>
-            <p class="eyebrow">Tool catalog audits for agent operators</p>
-            <h1>Help your agents choose the right tool.</h1>
+            <p class="eyebrow">CI confusion-pair gate + shortlist diet</p>
+            <h1>Stop agents picking the wrong sibling tool.</h1>
             <p class="subhead">
-              Find tools with overlapping names and descriptions. Get clearer
-              names, rewritten descriptions and a shortlist of 3–5 tools to keep
-              loaded, with the rest loaded when needed. Works alongside your
-              existing tool search.
+              When recall finds the right cluster but selection still picks
+              crm.patch over crm.write, you need a CI confusion-pair gate and a
+              short always-on shortlist — not a longer catalog.
             </p>
             <div class="cta-row">
               <a class="btn primary" href="#scorecard" data-source="catalogslim-scorecard"
@@ -58,14 +57,14 @@
               >
             </div>
           </div>
-          <aside class="diet-panel" aria-label="Overlapping tools versus a focused shortlist">
-            <p class="diet-panel-label">overlapping names → focused shortlist</p>
+          <aside class="diet-panel" aria-label="Wrong sibling pick versus a CI shortlist">
+            <p class="diet-panel-label">right cluster, wrong sibling → CI shortlist</p>
             <div class="diet-cols">
               <div>
                 <p class="col-kicker">before</p>
                 <ul>
+                  <li><span class="tool">crm.patch</span><span class="tag clash">wrong sibling</span></li>
                   <li><span class="tool">crm.update</span><span class="tag clash">overlap</span></li>
-                  <li><span class="tool">crm.patch</span><span class="tag clash">overlap</span></li>
                   <li><span class="tool">crm.upsert</span><span class="tag clash">overlap</span></li>
                   <li><span class="tool">plus 40+ more</span><span class="tag mute">always on</span></li>
                 </ul>
@@ -73,10 +72,10 @@
               <div>
                 <p class="col-kicker">after</p>
                 <ul>
-                  <li><span class="tool">crm.write</span><span class="tag ok">shortlist</span></li>
+                  <li><span class="tool">crm.write</span><span class="tag ok">selected</span></li>
                   <li><span class="tool">4 others</span><span class="tag ok">shortlist</span></li>
                   <li><span class="tool">rest of catalog</span><span class="tag mute">on demand</span></li>
-                  <li><span class="tool">rename pack</span><span class="tag ok">ready to load</span></li>
+                  <li><span class="tool">pair gate in CI</span><span class="tag ok">assertion</span></li>
                 </ul>
               </div>
             </div>
@@ -89,24 +88,24 @@
           <h2>What’s in the pack</h2>
           <ol class="bullet-grid">
             <li>
-              <h3>Find overlapping tools</h3>
+              <h3>CI confusion-pair gate</h3>
               <p>
-                Map groups of tools with similar names or descriptions so you
-                can see where an agent may choose the wrong one.
+                Ship a confusion-pair assertion so wrong-sibling regressions
+                fail in CI before agents feel them.
               </p>
             </li>
             <li>
-              <h3>Clarify names and descriptions</h3>
+              <h3>Keep a short always-on shortlist</h3>
               <p>
-                Get consistent names and descriptions that explain when to use
-                each tool instead of a similar one.
+                A written 3–5 tool diet stays loaded. The rest load on demand —
+                not a longer catalog.
               </p>
             </li>
             <li>
-              <h3>Keep a focused shortlist</h3>
+              <h3>Name the siblings so selection can tell them apart</h3>
               <p>
-                Get a written recommendation for 3–5 tools to keep loaded and
-                which tools to load only when needed.
+                Consistent names and descriptions that say when to use
+                crm.write instead of crm.patch.
               </p>
             </li>
           </ol>
@@ -119,9 +118,9 @@
             <h2>Who it’s for</h2>
             <p>
               Agent operators and platform teams with roughly 30+ tools or 3+
-              MCP servers, especially when agents choose similar tools
-              incorrectly. Fits teams already using tool search or loading tools
-              on demand.
+              MCP servers, when recall finds the right cluster but selection
+              still picks the wrong sibling. Fits teams already using tool
+              search or loading tools on demand.
             </p>
           </div>
           <div>
@@ -318,12 +317,13 @@
 
       <section class="waitlist" id="waitlist">
         <div class="wrap form-col">
-          <p class="eyebrow">Join the waitlist</p>
-          <h2>Tell us about your tool catalog</h2>
+          <p class="eyebrow">Audit + diet pack waitlist</p>
+          <h2>Request the pack</h2>
           <p class="lede">
             Email, five questions and a budget band are required. The score
-            above is optional. This is a waitlist for an Audit + diet pack that
-            works alongside your existing tool search.
+            above is optional. This waitlist is for an Audit + diet pack: a CI
+            confusion-pair gate and a short always-on shortlist, used alongside
+            existing tool search.
           </p>
 
           <div class="success" id="form-success" hidden role="status" tabindex="-1">
