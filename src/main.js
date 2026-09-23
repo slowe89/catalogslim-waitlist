@@ -1,6 +1,6 @@
 const DEFAULT_FORM_ACTION = "https://formsubmit.co/thespencerlowe@gmail.com";
 const FORM_ENDPOINT = import.meta.env.VITE_FORM_ENDPOINT || DEFAULT_FORM_ACTION;
-const SCORECARD_VERSION = "catalogslim-polish-2026-09-09";
+const SCORECARD_VERSION = "catalogslim-connector-id-2026-09-23";
 
 const KEYS = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"];
 

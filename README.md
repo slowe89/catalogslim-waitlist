@@ -6,7 +6,7 @@ Capture: **thespencerlowe@gmail.com**
 
 Meta title: `CatalogSlim — stop agents picking the wrong sibling tool`
 
-This is a demand test. CatalogSlim works alongside existing tool search: when recall finds the right cluster but selection still picks `crm.patch` over `crm.write`, ship a confusion-pair assertion and a short always-on shortlist — not a longer catalog.
+This is a demand test. CatalogSlim works alongside existing tool search: when recall finds the right cluster but selection still picks `crm.patch` over `crm.write`, or a named connector over an opaque UUID for the same product, ship a confusion-pair assertion and a short always-on shortlist — not a longer catalog.
 
 ## Run locally
 
@@ -42,7 +42,7 @@ VITE_FORM_ENDPOINT=https://formspree.io/f/xxxxxxxx
 
 Then rebuild. Leave it unset to keep FormSubmit → thespencerlowe@gmail.com.
 
-Hidden fields on submit: `_subject` (`CatalogSlim waitlist`), `_honey`, `source` (`catalogslim-scorecard` or `catalogslim-waitlist`), `score_total`, `score_vector` (Y/N), `timestamp`, and `scorecard_version` (`catalogslim-polish-2026-09-09`).
+Hidden fields on submit: `_subject` (`CatalogSlim waitlist`), `_honey`, `source` (`catalogslim-scorecard` or `catalogslim-waitlist`), `score_total`, `score_vector` (Y/N), `timestamp`, and `scorecard_version` (`catalogslim-connector-id-2026-09-23`). Q3 asks whether sibling MCP servers use stable connector IDs so a display name can’t collide.
 
 ## What’s on the page
 
@@ -54,7 +54,16 @@ This is a waitlist / score follow-up page only. No invented metrics or waitlist 
 
 ## Preview
 
-Wrong-sibling / CI shortlist copy (this branch):
+Named connector vs opaque UUID, on top of the wrong-sibling / CI shortlist copy:
+
+- [docs/named-vs-uuid/hero_desktop.png](docs/named-vs-uuid/hero_desktop.png) — hero example (desktop 1280×800)
+- [docs/named-vs-uuid/hero_mobile_375.png](docs/named-vs-uuid/hero_mobile_375.png) — hero example (~375px)
+- [docs/named-vs-uuid/pack_desktop.png](docs/named-vs-uuid/pack_desktop.png) — pack bullet (desktop)
+- [docs/named-vs-uuid/pack_mobile_375.png](docs/named-vs-uuid/pack_mobile_375.png) — pack bullet (~375px)
+- [docs/named-vs-uuid/scorecard_q3_desktop.png](docs/named-vs-uuid/scorecard_q3_desktop.png) — scorecard Q3, all Yes = 100 (desktop)
+- [docs/named-vs-uuid/scorecard_q3_mobile_375.png](docs/named-vs-uuid/scorecard_q3_mobile_375.png) — scorecard Q3 (~375px)
+
+Earlier wrong-sibling / CI shortlist shots:
 
 - [docs/sibling-copy/hero_desktop.png](docs/sibling-copy/hero_desktop.png) — hero + pack (desktop 1280×800)
 - [docs/sibling-copy/hero_mobile_375.png](docs/sibling-copy/hero_mobile_375.png) — hero (~375px)

@@ -83,8 +83,29 @@ check(
 const h1 = await page.locator("h1").innerText();
 check("H1 is new promise", h1.includes("Stop agents picking the wrong sibling tool"));
 
+const pageText = await page.locator("body").innerText();
+check(
+  "named vs opaque UUID example",
+  pageText.includes("atlassian") && pageText.includes("opaque UUID") && pageText.includes("wrong sibling selected"),
+);
+check(
+  "connector pack bullet",
+  pageText.includes("Name connectors so opaque IDs don’t win") &&
+    pageText.includes("treat that as a confusion pair, not a longer catalog"),
+);
+check(
+  "CI shortlist framing intact",
+  pageText.includes("CI confusion-pair gate") && pageText.includes("Keep a short always-on shortlist"),
+);
+check(
+  "pricing unchanged",
+  pageText.includes("$3,997–$9,997") &&
+    pageText.includes("$997–$1,997/mo") &&
+    pageText.includes("+$1,497"),
+);
+
 const version = await page.locator("#meta-score-version").inputValue();
-check("scorecard version marker", version === "catalogslim-polish-2026-09-09");
+check("scorecard version marker", version === "catalogslim-connector-id-2026-09-23");
 
 const action = await page.locator("#priestley-form").getAttribute("action");
 check("FormSubmit recipient", action === "https://formsubmit.co/thespencerlowe@gmail.com");
@@ -271,7 +292,7 @@ const active = await page.evaluate(() => document.activeElement?.id);
 check("focus moves to success", active === "form-success", `active=${active}`);
 check("success POST used ajax endpoint", Boolean(captured?.url.includes("/ajax/")));
 check("honeypot preserved in payload", Boolean(captured?.postData.includes("_honey")));
-check("scorecard_version in payload", Boolean(captured?.postData.includes("catalogslim-polish-2026-09-09")));
+check("scorecard_version in payload", Boolean(captured?.postData.includes("catalogslim-connector-id-2026-09-23")));
 check("subject in payload", Boolean(captured?.postData.includes("CatalogSlim waitlist")));
 check("no extra POST after success click", posts === afterRejectPosts + 3, `posts=${posts} afterReject=${afterRejectPosts}`);
 
