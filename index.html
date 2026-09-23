@@ -6,7 +6,7 @@
     <title>CatalogSlim — stop agents picking the wrong sibling tool</title>
     <meta
       name="description"
-      content="When recall finds the right cluster but selection still picks crm.patch over crm.write, ship a CI confusion-pair gate and a short always-on shortlist."
+      content="When recall finds the right cluster but selection still picks crm.patch over crm.write, or a named connector over an opaque UUID, ship a CI confusion-pair gate and a short always-on shortlist."
     />
     <meta name="theme-color" content="#0b1020" />
     <meta name="robots" content="index,follow" />
@@ -16,7 +16,7 @@
     />
     <meta
       property="og:description"
-      content="When recall finds the right cluster but selection still picks crm.patch over crm.write, ship a CI confusion-pair gate and a short always-on shortlist."
+      content="When recall finds the right cluster but selection still picks crm.patch over crm.write, or a named connector over an opaque UUID, ship a CI confusion-pair gate and a short always-on shortlist."
     />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -45,8 +45,9 @@
             <h1>Stop agents picking the wrong sibling tool.</h1>
             <p class="subhead">
               When recall finds the right cluster but selection still picks
-              crm.patch over crm.write, you need a CI confusion-pair gate and a
-              short always-on shortlist — not a longer catalog.
+              crm.patch over crm.write, or a named connector over an opaque
+              UUID, you need a CI confusion-pair gate and a short always-on
+              shortlist — not a longer catalog.
             </p>
             <div class="cta-row">
               <a class="btn primary" href="#scorecard" data-source="catalogslim-scorecard"
@@ -57,7 +58,7 @@
               >
             </div>
           </div>
-          <aside class="diet-panel" aria-label="Wrong sibling pick versus a CI shortlist">
+          <aside class="diet-panel" aria-label="Wrong sibling pick versus a CI shortlist, including a named connector versus an opaque UUID">
             <p class="diet-panel-label">right cluster, wrong sibling → CI shortlist</p>
             <div class="diet-cols">
               <div>
@@ -79,6 +80,10 @@
                 </ul>
               </div>
             </div>
+            <p class="diet-example">
+              <span class="tool">atlassian</span> (named) vs
+              <span class="tool">a0468d2d-…</span> (opaque UUID) — same product, wrong sibling selected.
+            </p>
           </aside>
         </div>
       </section>
@@ -102,10 +107,12 @@
               </p>
             </li>
             <li>
-              <h3>Name the siblings so selection can tell them apart</h3>
+              <h3>Name connectors so opaque IDs don’t win</h3>
               <p>
-                Consistent names and descriptions that say when to use
-                crm.write instead of crm.patch.
+                When two MCP servers cover the same product — one with a
+                display name, one with an unstable UUID — selection picks the
+                named wrong sibling. Shortlist + pair gate should treat that
+                as a confusion pair, not a longer catalog.
               </p>
             </li>
           </ol>
@@ -229,7 +236,7 @@
             </li>
             <li data-key="q3">
               <fieldset>
-                <legend>Do you use namespaced tool names?</legend>
+                <legend>Do sibling MCP servers use stable connector IDs so a display name can’t collide?</legend>
                 <div class="yn">
                   <label><input type="radio" name="maturity-q3" value="Y" /> <span>Yes</span></label>
                   <label><input type="radio" name="maturity-q3" value="N" /> <span>No</span></label>
@@ -351,7 +358,7 @@
               type="hidden"
               name="scorecard_version"
               id="meta-score-version"
-              value="catalogslim-polish-2026-09-09"
+              value="catalogslim-connector-id-2026-09-23"
             />
 
             <div class="field">
